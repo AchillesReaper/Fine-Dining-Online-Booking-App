@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		441382A6282E2BD800901BD1 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441382A5282E2BD800901BD1 /* test.swift */; };
 		4455F697282D56F9001DE860 /* meal.json in Resources */ = {isa = PBXBuildFile; fileRef = 4455F696282D56F9001DE860 /* meal.json */; };
 		44BA197C282D268F00A0BB87 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA197B282D268F00A0BB87 /* GetData.swift */; };
 		860593E928260209004F88F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593E828260209004F88F8 /* AppDelegate.swift */; };
@@ -25,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		441382A5282E2BD800901BD1 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		4455F696282D56F9001DE860 /* meal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = meal.json; sourceTree = "<group>"; };
 		44BA197B282D268F00A0BB87 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		860593E528260209004F88F8 /* Fine Dining Online Booking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fine Dining Online Booking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +58,6 @@
 			children = (
 				44BA197B282D268F00A0BB87 /* GetData.swift */,
 				4455F696282D56F9001DE860 /* meal.json */,
-				441382A5282E2BD800901BD1 /* test.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,7 +184,6 @@
 				44BA197C282D268F00A0BB87 /* GetData.swift in Sources */,
 				86C2DA82282E36B300C38B4C /* TableSizeViewController.swift in Sources */,
 				86C2DA84282E382500C38B4C /* TableAvailabilityViewController.swift in Sources */,
-				441382A6282E2BD800901BD1 /* test.swift in Sources */,
 				860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */,
 				86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */,
 				860593E928260209004F88F8 /* AppDelegate.swift in Sources */,

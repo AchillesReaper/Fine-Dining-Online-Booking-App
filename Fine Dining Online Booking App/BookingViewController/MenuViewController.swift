@@ -15,13 +15,14 @@ class MenuViewController: UIViewController{
     @IBOutlet weak var dessertTab: UILabel!
     @IBOutlet weak var dayTab: UILabel!
     @IBOutlet weak var priceTab: UILabel!
-    
+    var day:String = "Monday"
+
     override func viewDidLoad() {
         //Get JSON DATA From GetData
         let menu = parseJson()
         //Show menu based on current day of the week
         //We can simply add new meal based on date by adding new case
-        let day = getDay()
+        
         var cDay:Int;
         switch day {
         case "Monday", "Wednesday", "Friday","Sunday":
