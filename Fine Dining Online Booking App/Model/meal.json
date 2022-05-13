@@ -1,0 +1,19 @@
+
+[
+   {
+      "uuid":1 ,
+      "appetizer": "Japanese Clear Clam Soup(Sake)",
+      "sashimiPlate": "Salmon, Otoro, Scallop and Prawn",
+      "main": "Omakase -- Sushi",
+      "dessert":"Japanese Mochi",
+      "price": 250
+   },
+   {
+       "uuid":2 ,
+       "appetizer": "Onigiri (Japanese Rice Balls) ",
+       "sashimiPlate": "Salmon, Kingfish, Oyster and Surf Clam",
+       "main": "Omakase -- Sushi",
+       "dessert":"Japanese Daifuku",
+       "price": 280
+   }
+]

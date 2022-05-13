@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4455F697282D56F9001DE860 /* meal.json in Resources */ = {isa = PBXBuildFile; fileRef = 4455F696282D56F9001DE860 /* meal.json */; };
+		44BA197C282D268F00A0BB87 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA197B282D268F00A0BB87 /* GetData.swift */; };
 		860593E928260209004F88F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593E828260209004F88F8 /* AppDelegate.swift */; };
 		860593EB28260209004F88F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593EA28260209004F88F8 /* SceneDelegate.swift */; };
 		860593ED28260209004F88F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593EC28260209004F88F8 /* ViewController.swift */; };
 		860593F028260209004F88F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860593EE28260209004F88F8 /* Main.storyboard */; };
 		860593F22826020C004F88F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860593F12826020C004F88F8 /* Assets.xcassets */; };
 		860593F52826020C004F88F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860593F32826020C004F88F8 /* LaunchScreen.storyboard */; };
+		860593FE2826064F004F88F8 /* DatePersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593FD2826064F004F88F8 /* DatePersonViewController.swift */; };
+		8605940028260679004F88F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593FF28260679004F88F8 /* MenuViewController.swift */; };
+		86059402282606A9004F88F8 /* PersonalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86059401282606A9004F88F8 /* PersonalDetailViewController.swift */; };
+		860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860594032826081A004F88F8 /* ConfirmedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4455F696282D56F9001DE860 /* meal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = meal.json; sourceTree = "<group>"; };
+		44BA197B282D268F00A0BB87 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		860593E528260209004F88F8 /* Fine Dining Online Booking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fine Dining Online Booking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		860593E828260209004F88F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		860593EA28260209004F88F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		860593F12826020C004F88F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860593F42826020C004F88F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860593F62826020C004F88F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860593FD2826064F004F88F8 /* DatePersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePersonViewController.swift; sourceTree = "<group>"; };
+		860593FF28260679004F88F8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		86059401282606A9004F88F8 /* PersonalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailViewController.swift; sourceTree = "<group>"; };
+		860594032826081A004F88F8 /* ConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44BA197A282D266F00A0BB87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44BA197B282D268F00A0BB87 /* GetData.swift */,
+				4455F696282D56F9001DE860 /* meal.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		860593DC28260209004F88F8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +77,8 @@
 		860593E728260209004F88F8 /* Fine Dining Online Booking App */ = {
 			isa = PBXGroup;
 			children = (
+				44BA197A282D266F00A0BB87 /* Model */,
+				860593FC282605D0004F88F8 /* BookingViewController */,
 				860593E828260209004F88F8 /* AppDelegate.swift */,
 				860593EA28260209004F88F8 /* SceneDelegate.swift */,
 				860593EC28260209004F88F8 /* ViewController.swift */,
@@ -65,6 +88,17 @@
 				860593F62826020C004F88F8 /* Info.plist */,
 			);
 			path = "Fine Dining Online Booking App";
+			sourceTree = "<group>";
+		};
+		860593FC282605D0004F88F8 /* BookingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				860593FD2826064F004F88F8 /* DatePersonViewController.swift */,
+				860593FF28260679004F88F8 /* MenuViewController.swift */,
+				86059401282606A9004F88F8 /* PersonalDetailViewController.swift */,
+				860594032826081A004F88F8 /* ConfirmedViewController.swift */,
+			);
+			path = BookingViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4455F697282D56F9001DE860 /* meal.json in Resources */,
 				860593F52826020C004F88F8 /* LaunchScreen.storyboard in Resources */,
 				860593F22826020C004F88F8 /* Assets.xcassets in Resources */,
 				860593F028260209004F88F8 /* Main.storyboard in Resources */,
@@ -139,8 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				860593ED28260209004F88F8 /* ViewController.swift in Sources */,
+				8605940028260679004F88F8 /* MenuViewController.swift in Sources */,
+				44BA197C282D268F00A0BB87 /* GetData.swift in Sources */,
+				860593FE2826064F004F88F8 /* DatePersonViewController.swift in Sources */,
+				860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */,
 				860593E928260209004F88F8 /* AppDelegate.swift in Sources */,
 				860593EB28260209004F88F8 /* SceneDelegate.swift in Sources */,
+				86059402282606A9004F88F8 /* PersonalDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
