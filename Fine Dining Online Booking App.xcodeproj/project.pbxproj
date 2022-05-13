@@ -20,6 +20,8 @@
 		86059402282606A9004F88F8 /* PersonalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86059401282606A9004F88F8 /* PersonalDetailViewController.swift */; };
 		860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860594032826081A004F88F8 /* ConfirmedViewController.swift */; };
 		86C2DA82282E36B300C38B4C /* TableSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA81282E36B300C38B4C /* TableSizeViewController.swift */; };
+		86C2DA84282E382500C38B4C /* TableAvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA83282E382500C38B4C /* TableAvailabilityViewController.swift */; };
+		86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		86059401282606A9004F88F8 /* PersonalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailViewController.swift; sourceTree = "<group>"; };
 		860594032826081A004F88F8 /* ConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedViewController.swift; sourceTree = "<group>"; };
 		86C2DA81282E36B300C38B4C /* TableSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSizeViewController.swift; sourceTree = "<group>"; };
+		86C2DA83282E382500C38B4C /* TableAvailabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAvailabilityViewController.swift; sourceTree = "<group>"; };
+		86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				86059401282606A9004F88F8 /* PersonalDetailViewController.swift */,
 				860594032826081A004F88F8 /* ConfirmedViewController.swift */,
 				86C2DA81282E36B300C38B4C /* TableSizeViewController.swift */,
+				86C2DA83282E382500C38B4C /* TableAvailabilityViewController.swift */,
+				86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */,
 			);
 			path = BookingViewController;
 			sourceTree = "<group>";
@@ -180,8 +186,10 @@
 				8605940028260679004F88F8 /* MenuViewController.swift in Sources */,
 				44BA197C282D268F00A0BB87 /* GetData.swift in Sources */,
 				86C2DA82282E36B300C38B4C /* TableSizeViewController.swift in Sources */,
+				86C2DA84282E382500C38B4C /* TableAvailabilityViewController.swift in Sources */,
 				441382A6282E2BD800901BD1 /* test.swift in Sources */,
 				860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */,
+				86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */,
 				860593E928260209004F88F8 /* AppDelegate.swift in Sources */,
 				860593EB28260209004F88F8 /* SceneDelegate.swift in Sources */,
 				86059402282606A9004F88F8 /* PersonalDetailViewController.swift in Sources */,
