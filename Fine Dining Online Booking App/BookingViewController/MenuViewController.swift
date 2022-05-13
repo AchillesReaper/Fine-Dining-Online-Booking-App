@@ -51,13 +51,3 @@ class MenuViewController: UIViewController{
     
 }
 
-
-
-func getDay() -> String{
-    //Dateforamtter to get current day
-    let date = Date()
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "EEEE"
-    let dayInWeek = dateFormatter.string(from: date)
-    return dayInWeek
-}
