@@ -14,7 +14,7 @@ struct TableInStock: Codable{
     var tablez = [ "2" : 4, "4" : 2, "6" : 1]
 }
 struct TableAvailability {
-    var diningDate: Date
+    var diningDate: String
     var availability: String
 }
 
@@ -50,7 +50,7 @@ class TableSizeViewController: UIViewController {
     
     var tableSize:String = "0"
     var tableAvailability: [TableAvailability] = []
-    var pickableDate:[Date] = []
+    var pickableDate:[String] = []
     var pickerView = UIPickerView()
     
     
@@ -65,6 +65,7 @@ class TableSizeViewController: UIViewController {
                     pickableDate.append(item.diningDate)
                 }
             }
+            print(pickableDate)
             diningDateField.inputView = pickerView
         }
         tableAvailibilityView.delegate = self
@@ -117,9 +118,11 @@ class TableSizeViewController: UIViewController {
     
     func checkTableAvailability(queryTableSize:String){
         let booking = readUserDefaults(key: KEY_Table_STATUS)
-//        print(booking)
         for index in 0...6{
-            let newDiningDate = booking[index].diningDate
+            let dateFomatter = DateFormatter()
+            dateFomatter.dateFormat = "YYYY-MM-dd"
+            let newDiningDate = dateFomatter.string(from: booking[index].diningDate)
+
             var newAvailability: String
             if booking[index].tablez[queryTableSize]! > 0 {
                 newAvailability = "Available"
@@ -145,9 +148,7 @@ extension TableSizeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dateAvailability", for: indexPath)
         let record = tableAvailability[indexPath.row]
-        let dateFomatter = DateFormatter()
-        dateFomatter.dateFormat = "YYYY-MM-dd"
-        cell.textLabel?.text = dateFomatter.string(from: record.diningDate)
+        cell.textLabel?.text = record.diningDate
         cell.detailTextLabel?.text = record.availability
         return cell
     }
@@ -163,14 +164,10 @@ extension TableSizeViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let dateFomatter = DateFormatter()
-        dateFomatter.dateFormat = "YYYY-MM-dd"
-        return dateFomatter.string(from: pickableDate[row])
+        return pickableDate[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let dateFomatter = DateFormatter()
-        dateFomatter.dateFormat = "YYYY-MM-dd"
-        diningDateField.text = dateFomatter.string(from: pickableDate[row])
+        diningDateField.text = pickableDate[row]
         diningDateField.resignFirstResponder()
     }
 }
