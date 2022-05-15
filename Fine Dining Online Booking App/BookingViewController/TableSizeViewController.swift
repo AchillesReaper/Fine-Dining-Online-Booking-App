@@ -51,7 +51,8 @@ class TableSizeViewController: UIViewController {
     var tableSize:String = "0"
     var tableAvailability: [TableAvailability] = []
     var pickableDate:[String] = []
-    var pickerView = UIPickerView()
+    var datePickerView = UIPickerView()
+    var updatedTableStatus: [TableAvailability] = []
     
     
     override func viewDidLoad() {
@@ -66,15 +67,38 @@ class TableSizeViewController: UIViewController {
                 }
             }
             print(pickableDate)
-            diningDateField.inputView = pickerView
+            diningDateField.inputView = datePickerView
         }
-        pickerView.delegate = self
-        pickerView.dataSource = self
+        tableAvailibilityView.delegate = self
+        tableAvailibilityView.dataSource = self
         
-        // Do any additional setup after loading the view.
+        datePickerView.delegate = self
+        datePickerView.dataSource = self
+        
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "confirmTableBooking"{
+            //update the userDefault[KEY_Table_STATUS]
+            updateTableInStock(datePicked: diningDateField.text!)
+        }
     }
     
     
+    func updateTableInStock(datePicked: String){
+        var inventory = readUserDefaults(key: KEY_Table_STATUS)
+        let dateFomatter = DateFormatter()
+        dateFomatter.dateFormat = "YYYY-MM-dd"
+        for index in 0...6{
+            let itemDate = dateFomatter.string(from: inventory[index].diningDate)
+            if itemDate == datePicked {
+                inventory[index].tablez[tableSize]! -= 1
+            }
+        }
+        updateUserDefaults(updatedRecords: inventory)
+    }
     
     func readUserDefaults(key: String) -> [TableInStock]{
         let defaults = UserDefaults.standard
@@ -100,41 +124,39 @@ class TableSizeViewController: UIViewController {
         //if userDefaultRecord < 7 <== on date has passed
         //add a new record for TableInStock
         //can used to initialize the userDefault record
-        var booking = readUserDefaults(key: KEY_Table_STATUS)
+        var inventory = readUserDefaults(key: KEY_Table_STATUS)
         //obselete record will be removed
-        for item in booking{
+        for item in inventory{
             if item.diningDate < Date(){
-                booking.remove(at: 0)
+                inventory.remove(at: 0)
             }
         }
-        while booking.count < 7 {
-            let newRecordDaysFromToday = booking.count + 1
+        while inventory.count < 7 {
+            let newRecordDaysFromToday = inventory.count + 1
             let newRecordDate = Calendar.current.date(byAdding: .day, value: newRecordDaysFromToday, to: Date())!
             let newTableInStock = TableInStock(diningDate: newRecordDate)
-            booking.append(newTableInStock)
+            inventory.append(newTableInStock)
         }
-        updateUserDefaults(updatedRecords: booking)
+        updateUserDefaults(updatedRecords: inventory)
     }
     
     func checkTableAvailability(queryTableSize:String){
-        let booking = readUserDefaults(key: KEY_Table_STATUS)
+        // this function will check if there is any table available in the future 7 days.
+        let inventory = readUserDefaults(key: KEY_Table_STATUS)
         for index in 0...6{
             let dateFomatter = DateFormatter()
             dateFomatter.dateFormat = "YYYY-MM-dd"
-            let newDiningDate = dateFomatter.string(from: booking[index].diningDate)
+            let newDiningDate = dateFomatter.string(from: inventory[index].diningDate)
 
             var newAvailability: String
-            if booking[index].tablez[queryTableSize]! > 0 {
+            if inventory[index].tablez[queryTableSize]! > 0 {
                 newAvailability = "Available"
             }else{
                 newAvailability = "Full"
             }
             tableAvailability.append(TableAvailability(diningDate: newDiningDate, availability: newAvailability))
         }
-//        print(tableAvailability)
     }
-
-
 }
 
 
@@ -166,6 +188,7 @@ extension TableSizeViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickableDate[row]
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         diningDateField.text = pickableDate[row]
         diningDateField.resignFirstResponder()

@@ -127,7 +127,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="kIA-bX-Rdx" kind="show" id="Ygd-cE-jEM"/>
+                                    <segue destination="kIA-bX-Rdx" kind="show" identifier="confirmTableBooking" id="Ygd-cE-jEM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49q-uv-sGk">
