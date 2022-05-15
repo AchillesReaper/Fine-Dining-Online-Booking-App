@@ -68,8 +68,8 @@ class TableSizeViewController: UIViewController {
             print(pickableDate)
             diningDateField.inputView = pickerView
         }
-        tableAvailibilityView.delegate = self
-        tableAvailibilityView.dataSource = self
+        pickerView.delegate = self
+        pickerView.dataSource = self
         
         // Do any additional setup after loading the view.
     }
