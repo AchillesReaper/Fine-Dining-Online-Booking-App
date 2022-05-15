@@ -181,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="347" width="390" height="263"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dateAvailability" textLabel="zKv-L4-w8h" detailTextLabel="GzC-C6-Yyf" style="IBUITableViewCellStyleValue1" id="Cis-Bc-WEo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dateAvailability" textLabel="zKv-L4-w8h" detailTextLabel="GzC-C6-Yyf" style="IBUITableViewCellStyleValue1" id="Cis-Bc-WEo">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cis-Bc-WEo" id="Mgw-BT-1Rl">

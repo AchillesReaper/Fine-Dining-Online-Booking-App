@@ -90,12 +90,13 @@ class TableSizeViewController: UIViewController {
     func updateTableInStock(datePicked: String){
         var inventory = readUserDefaults(key: KEY_Table_STATUS)
         let dateFomatter = DateFormatter()
-        dateFomatter.dateFormat = "YYYY-MM-dd"
+        dateFomatter.dateFormat = "YYYY-MM-dd, E"
         for index in 0...6{
             let itemDate = dateFomatter.string(from: inventory[index].diningDate)
             if itemDate == datePicked {
                 inventory[index].tablez[tableSize]! -= 1
             }
+            print(inventory[index])
         }
         updateUserDefaults(updatedRecords: inventory)
     }
@@ -145,7 +146,7 @@ class TableSizeViewController: UIViewController {
         let inventory = readUserDefaults(key: KEY_Table_STATUS)
         for index in 0...6{
             let dateFomatter = DateFormatter()
-            dateFomatter.dateFormat = "YYYY-MM-dd"
+            dateFomatter.dateFormat = "YYYY-MM-dd, E"
             let newDiningDate = dateFomatter.string(from: inventory[index].diningDate)
 
             var newAvailability: String
@@ -156,6 +157,7 @@ class TableSizeViewController: UIViewController {
             }
             tableAvailability.append(TableAvailability(diningDate: newDiningDate, availability: newAvailability))
         }
+        print(tableAvailability)
     }
 }
 
