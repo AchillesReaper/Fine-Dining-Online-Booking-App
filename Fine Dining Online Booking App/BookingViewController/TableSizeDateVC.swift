@@ -11,7 +11,11 @@ import UIKit
 
 
 class TableSizeDateVC: UIViewController {
-
+    @IBOutlet weak var tableSize2: UIButton!
+    @IBOutlet weak var tableSize4: UIButton!
+    @IBOutlet weak var tableSize6: UIButton!
+    @IBOutlet weak var confirmButton: UIButton!
+    
     @IBAction func tableForTwo(){
         //parse tableSize = "2" into func checkTableAvailability
         let vc = storyboard?.instantiateViewController(identifier: "TableSizeDateVC") as! TableSizeDateVC
@@ -48,6 +52,12 @@ class TableSizeDateVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableSize2.layer.cornerRadius = 5
+        tableSize4.layer.cornerRadius = 5
+        tableSize6.layer.cornerRadius = 5
+        confirmButton.layer.cornerRadius = 10
+        
         createNewDate()
         if tableSize != "0"{
             tableAvailability = checkTableAvailability(queryTableSize: tableSize)

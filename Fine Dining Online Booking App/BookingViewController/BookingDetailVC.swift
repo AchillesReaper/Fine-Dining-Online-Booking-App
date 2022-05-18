@@ -11,7 +11,8 @@ import UIKit
 
 
 class BookingDetailVC: UIViewController {
-
+    @IBOutlet weak var confirmButton: UIButton!
+    
     @IBOutlet var customerNameField: UITextField!
     @IBOutlet var customerPhoneField: UITextField!
     @IBOutlet var customerEmailField: UITextField!
@@ -23,6 +24,7 @@ class BookingDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        confirmButton.layer.cornerRadius = 10
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
