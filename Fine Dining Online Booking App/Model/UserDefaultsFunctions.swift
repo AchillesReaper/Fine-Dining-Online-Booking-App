@@ -115,9 +115,9 @@ func updateTableInStockATConfirmation(datePicked: String, tableSizePicked: Strin
 
 
 
-func readBookingRecord(key: String) -> [BookingDetail]{
+func readBookingRecord() -> [BookingDetail]{
     let defaults = UserDefaults.standard
-    if let savedArrayData = defaults.value(forKey:key) as? Data {
+    if let savedArrayData = defaults.value(forKey:KEY_BOOKING_RECORD) as? Data {
         if let array = try? PropertyListDecoder().decode(Array<BookingDetail>.self, from: savedArrayData) {
             return array
         } else {
@@ -136,7 +136,7 @@ func updateBookingRecord(updatedRecords: [BookingDetail]){
 
 
 func confirmBooking(newBooking: BookingDetail){
-    var bookings = readBookingRecord(key: KEY_BOOKING_RECORD)
+    var bookings = readBookingRecord()
     let dateFomatter = DateFormatter()
     dateFomatter.dateFormat = "YYYY-MM-dd, E"
     bookings.append(newBooking)

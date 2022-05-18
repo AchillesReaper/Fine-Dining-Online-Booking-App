@@ -70,11 +70,13 @@ class TableSizeDateVC: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "confirmTableBooking"{
+        if segue.identifier == "enterBookingDetail"{
             let VC = segue.destination as! BookingDetailVC
             if tableSize != "0" && diningDateField.text != nil{
                 VC.tableSizePicked = tableSize
+                print(tableSize)
                 VC.datePicked = diningDateField.text!
+                print(diningDateField.text!)
             }
         }
     }

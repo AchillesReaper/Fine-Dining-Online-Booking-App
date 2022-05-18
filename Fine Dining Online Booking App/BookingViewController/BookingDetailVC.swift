@@ -26,15 +26,21 @@ class BookingDetailVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let newBooking = BookingDetail(
-            tableSize: tableSizePicked,
-            bookingDate: datePicked,
-            customerName: customerNameField.text!,
-            customerPhone: customerPhoneField.text!,
-            customerEmail: customerEmailField.text!
-        )
-        updateTableInStockATConfirmation(datePicked: datePicked, tableSizePicked: tableSizePicked)
-        confirmBooking(newBooking: newBooking)
+        if segue.identifier == "confirmBooking" {
+            let newBooking = BookingDetail(
+                tableSize: tableSizePicked,
+                bookingDate: datePicked,
+                customerName: customerNameField.text!,
+                customerPhone: customerPhoneField.text!,
+                customerEmail: customerEmailField.text!
+            )
+            updateTableInStockATConfirmation(datePicked: datePicked, tableSizePicked: tableSizePicked)
+            confirmBooking(newBooking: newBooking)
+            
+            let VC = segue.destination as! ConfirmationVC
+            VC.yourBooking = newBooking
+            print("newBooking: \(newBooking)")
+        }
     }
     
     
