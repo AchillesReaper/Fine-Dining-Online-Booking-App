@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BF95E172834981200932A6D /* UserDefaultsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF95E162834981200932A6D /* UserDefaultsFunctions.swift */; };
 		4455F697282D56F9001DE860 /* meal.json in Resources */ = {isa = PBXBuildFile; fileRef = 4455F696282D56F9001DE860 /* meal.json */; };
 		44BA197C282D268F00A0BB87 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA197B282D268F00A0BB87 /* GetData.swift */; };
 		860593E928260209004F88F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593E828260209004F88F8 /* AppDelegate.swift */; };
@@ -16,14 +17,15 @@
 		860593F22826020C004F88F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860593F12826020C004F88F8 /* Assets.xcassets */; };
 		860593F52826020C004F88F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860593F32826020C004F88F8 /* LaunchScreen.storyboard */; };
 		8605940028260679004F88F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860593FF28260679004F88F8 /* MenuViewController.swift */; };
-		86059402282606A9004F88F8 /* PersonalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86059401282606A9004F88F8 /* PersonalDetailViewController.swift */; };
-		860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860594032826081A004F88F8 /* ConfirmedViewController.swift */; };
-		86C2DA82282E36B300C38B4C /* TableSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA81282E36B300C38B4C /* TableSizeViewController.swift */; };
+		86059402282606A9004F88F8 /* BookingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86059401282606A9004F88F8 /* BookingDetailVC.swift */; };
+		860594042826081A004F88F8 /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860594032826081A004F88F8 /* ConfirmationVC.swift */; };
+		86C2DA82282E36B300C38B4C /* TableSizeDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA81282E36B300C38B4C /* TableSizeDateVC.swift */; };
 		86C2DA84282E382500C38B4C /* TableAvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA83282E382500C38B4C /* TableAvailabilityViewController.swift */; };
 		86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BF95E162834981200932A6D /* UserDefaultsFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFunctions.swift; sourceTree = "<group>"; };
 		4455F696282D56F9001DE860 /* meal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = meal.json; sourceTree = "<group>"; };
 		44BA197B282D268F00A0BB87 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		860593E528260209004F88F8 /* Fine Dining Online Booking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fine Dining Online Booking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,9 +37,9 @@
 		860593F42826020C004F88F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860593F62826020C004F88F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		860593FF28260679004F88F8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		86059401282606A9004F88F8 /* PersonalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailViewController.swift; sourceTree = "<group>"; };
-		860594032826081A004F88F8 /* ConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedViewController.swift; sourceTree = "<group>"; };
-		86C2DA81282E36B300C38B4C /* TableSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSizeViewController.swift; sourceTree = "<group>"; };
+		86059401282606A9004F88F8 /* BookingDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailVC.swift; sourceTree = "<group>"; };
+		860594032826081A004F88F8 /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		86C2DA81282E36B300C38B4C /* TableSizeDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSizeDateVC.swift; sourceTree = "<group>"; };
 		86C2DA83282E382500C38B4C /* TableAvailabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAvailabilityViewController.swift; sourceTree = "<group>"; };
 		86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +60,7 @@
 			children = (
 				44BA197B282D268F00A0BB87 /* GetData.swift */,
 				4455F696282D56F9001DE860 /* meal.json */,
+				1BF95E162834981200932A6D /* UserDefaultsFunctions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				860593FF28260679004F88F8 /* MenuViewController.swift */,
-				86059401282606A9004F88F8 /* PersonalDetailViewController.swift */,
-				860594032826081A004F88F8 /* ConfirmedViewController.swift */,
-				86C2DA81282E36B300C38B4C /* TableSizeViewController.swift */,
+				86059401282606A9004F88F8 /* BookingDetailVC.swift */,
+				860594032826081A004F88F8 /* ConfirmationVC.swift */,
+				86C2DA81282E36B300C38B4C /* TableSizeDateVC.swift */,
 				86C2DA83282E382500C38B4C /* TableAvailabilityViewController.swift */,
 				86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */,
 			);
@@ -182,13 +185,14 @@
 				860593ED28260209004F88F8 /* ViewController.swift in Sources */,
 				8605940028260679004F88F8 /* MenuViewController.swift in Sources */,
 				44BA197C282D268F00A0BB87 /* GetData.swift in Sources */,
-				86C2DA82282E36B300C38B4C /* TableSizeViewController.swift in Sources */,
+				86C2DA82282E36B300C38B4C /* TableSizeDateVC.swift in Sources */,
 				86C2DA84282E382500C38B4C /* TableAvailabilityViewController.swift in Sources */,
-				860594042826081A004F88F8 /* ConfirmedViewController.swift in Sources */,
+				860594042826081A004F88F8 /* ConfirmationVC.swift in Sources */,
 				86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */,
 				860593E928260209004F88F8 /* AppDelegate.swift in Sources */,
+				1BF95E172834981200932A6D /* UserDefaultsFunctions.swift in Sources */,
 				860593EB28260209004F88F8 /* SceneDelegate.swift in Sources */,
-				86059402282606A9004F88F8 /* PersonalDetailViewController.swift in Sources */,
+				86059402282606A9004F88F8 /* BookingDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  PersonalDetailViewController.swift
+//  ConfirmedViewController.swift
 //  Fine Dining Online Booking App
 //
 //  Created by Guo Chen on 7/5/2022.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class PersonalDetailViewController: UIViewController {
+class ConfirmationVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

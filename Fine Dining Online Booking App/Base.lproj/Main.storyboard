@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1897" y="919"/>
         </scene>
-        <!--Table Size View Controller-->
+        <!--Table Size DateVC-->
         <scene sceneID="hiy-dW-D7e">
             <objects>
-                <viewController storyboardIdentifier="TableSizeViewController" id="8Zk-tX-TAt" customClass="TableSizeViewController" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableSizeDateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Zk-tX-TAt" customClass="TableSizeDateVC" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="geF-DZ-gag">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -437,10 +437,10 @@
             </objects>
             <point key="canvasLocation" x="2851" y="-636"/>
         </scene>
-        <!--Confirmed View Controller-->
+        <!--ConfirmationVC-->
         <scene sceneID="8DK-tv-fFh">
             <objects>
-                <viewController storyboardIdentifier="ConfirmedViewController" id="lhA-IQ-Fvw" customClass="ConfirmedViewController" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmedViewController" id="lhA-IQ-Fvw" customClass="ConfirmationVC" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MLY-dq-tJX">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,10 +556,10 @@
             </objects>
             <point key="canvasLocation" x="3854" y="105"/>
         </scene>
-        <!--Personal Detail View Controller-->
+        <!--Booking DetailVC-->
         <scene sceneID="R0v-6K-cLh">
             <objects>
-                <viewController storyboardIdentifier="PersonalDetailViewController" id="WLY-kt-J0e" customClass="PersonalDetailViewController" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonalDetailViewController" id="WLY-kt-J0e" customClass="BookingDetailVC" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xK9-gF-jGJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -617,7 +617,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEH-ZD-eLW">
-                                <rect key="frame" x="155" y="129" width="83" height="21"/>
+                                <rect key="frame" x="161" y="189" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="table for #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-fW-Iwx">
+                                <rect key="frame" x="173" y="135" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
