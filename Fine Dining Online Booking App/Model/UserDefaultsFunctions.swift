@@ -33,9 +33,9 @@ struct BookingDetail: Codable{
 
 
 
-func readTableInStock(key: String) -> [TableInStock]{
+func readTableInStock() -> [TableInStock]{
     let defaults = UserDefaults.standard
-    if let savedArrayData = defaults.value(forKey:key) as? Data {
+    if let savedArrayData = defaults.value(forKey:KEY_Table_STATUS) as? Data {
         if let array = try? PropertyListDecoder().decode(Array<TableInStock>.self, from: savedArrayData) {
             return array
         } else {
@@ -60,7 +60,7 @@ func createNewDate(){
     //if userDefaultRecord < 7 <== on date has passed
     //add a new record for TableInStock
     //can used to initialize the userDefault record
-    var inventory = readTableInStock(key: KEY_Table_STATUS)
+    var inventory = readTableInStock()
     //obselete record will be removed
     for item in inventory{
         if item.diningDate < Date(){
@@ -79,7 +79,7 @@ func createNewDate(){
 
 func checkTableAvailability(queryTableSize:String)->[TableAvailability]{
     // this function will check if there is any table available in the future 7 days.
-    let inventory = readTableInStock(key: KEY_Table_STATUS)
+    let inventory = readTableInStock()
     var tableStatus:[TableAvailability] = []
     for index in 0...6{
         let dateFomatter = DateFormatter()
@@ -99,7 +99,7 @@ func checkTableAvailability(queryTableSize:String)->[TableAvailability]{
 
 
 func updateTableInStockATConfirmation(datePicked: String, tableSizePicked: String){
-    var inventory = readTableInStock(key: KEY_Table_STATUS)
+    var inventory = readTableInStock()
     let dateFomatter = DateFormatter()
     dateFomatter.dateFormat = "YYYY-MM-dd, E"
     for index in 0...6{
@@ -117,7 +117,7 @@ func updateTableInStockATConfirmation(datePicked: String, tableSizePicked: Strin
 
 func readBookingRecord() -> [BookingDetail]{
     let defaults = UserDefaults.standard
-    if let savedArrayData = defaults.value(forKey:KEY_BOOKING_RECORD) as? Data {
+    if let savedArrayData = defaults.value(forKey: KEY_BOOKING_RECORD) as? Data {
         if let array = try? PropertyListDecoder().decode(Array<BookingDetail>.self, from: savedArrayData) {
             return array
         } else {
@@ -128,17 +128,19 @@ func readBookingRecord() -> [BookingDetail]{
     }
 }
 
-func updateBookingRecord(updatedRecords: [BookingDetail]){
-    //update the UserDefaults when a booking is confirmed
+//func updateBookingRecord(updatedRecords: [BookingDetail]){
+//    //update the UserDefaults when a booking is confirmed
+//    let defaults = UserDefaults.standard
+//    defaults.set(try? PropertyListEncoder().encode(updatedRecords), forKey: KEY_BOOKING_RECORD)
+//}
+
+
+func confirmBooking(newBooking: [BookingDetail]){
+//    var bookings = readBookingRecord()
+//    let dateFomatter = DateFormatter()
+//    dateFomatter.dateFormat = "YYYY-MM-dd, E"
+//    bookings.append(newBooking)
+//    updateBookingRecord(updatedRecords: bookings)
     let defaults = UserDefaults.standard
-    defaults.set(try? PropertyListEncoder().encode(updatedRecords), forKey: KEY_BOOKING_RECORD)
-}
-
-
-func confirmBooking(newBooking: BookingDetail){
-    var bookings = readBookingRecord()
-    let dateFomatter = DateFormatter()
-    dateFomatter.dateFormat = "YYYY-MM-dd, E"
-    bookings.append(newBooking)
-    updateBookingRecord(updatedRecords: bookings)
+    defaults.set(try? PropertyListEncoder().encode(newBooking), forKey: KEY_BOOKING_RECORD)
 }

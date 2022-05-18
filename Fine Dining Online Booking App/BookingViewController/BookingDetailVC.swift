@@ -37,11 +37,12 @@ class BookingDetailVC: UIViewController {
                 customerEmail: customerEmailField.text!
             )
             updateTableInStockATConfirmation(datePicked: datePicked, tableSizePicked: tableSizePicked)
-            confirmBooking(newBooking: newBooking)
+            print("New Booking: \(newBooking)")
+            confirmBooking(newBooking: [newBooking])
+            print(readBookingRecord())
             
             let VC = segue.destination as! ConfirmationVC
-            VC.yourBooking = newBooking
-            print("newBooking: \(newBooking)")
+            VC.segueMsg = "Booking Successful. Thank you!"
         }
     }
     

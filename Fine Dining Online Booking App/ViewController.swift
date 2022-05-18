@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         reserveTableButton.layer.cornerRadius = 10
         appointmentHistoryButton.layer.cornerRadius = 10
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showBooking" {
+            let VC = segue.destination as! ConfirmationVC
+            VC.segueMsg = "Your Booking"
+        }
+    }
 
 
 }
