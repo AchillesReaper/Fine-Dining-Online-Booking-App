@@ -159,7 +159,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="kIA-bX-Rdx" kind="showDetail" id="O9D-Df-L40"/>
+                                    <segue destination="kIA-bX-Rdx" kind="show" id="Iio-hn-bwL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -694,11 +694,11 @@
             <objects>
                 <viewController storyboardIdentifier="MenuDateVC" id="kIA-bX-Rdx" customClass="MenuDateVC" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R7L-ab-bcf">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="AkO-jN-tcC">
-                                <rect key="frame" x="95" y="300" width="200" height="190"/>
+                                <rect key="frame" x="95" y="327" width="200" height="190"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tap to select date" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFv-Ij-kyf">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -755,7 +755,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <segue destination="Hsk-10-BCi" kind="show" identifier="goMenu" id="eMQ-GP-axb"/>
+                                            <segue destination="Hsk-10-BCi" kind="show" id="ajj-QI-cAN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -803,7 +803,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="hTx-QH-xXa"/>
+                    <navigationItem key="navigationItem" id="hTx-QH-xXa">
+                        <barButtonItem key="backBarButtonItem" id="Szl-4j-t2h"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="daysField" destination="aFv-Ij-kyf" id="AvD-zh-4VD"/>
                         <outlet property="menuButton" destination="rFM-ET-cFF" id="Yoc-8D-4iX"/>
@@ -818,14 +820,14 @@
             <objects>
                 <viewController storyboardIdentifier="MenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hsk-10-BCi" customClass="MenuVC" customModule="Fine_Dining_Online_Booking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cXc-Fs-qk7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-T3-gTj">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="bKE-J5-Te6">
-                                <rect key="frame" x="99.666666666666686" y="187.33333333333334" width="191" height="415.33333333333326"/>
+                                <rect key="frame" x="99.666666666666686" y="234.33333333333334" width="191" height="415.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6bw-rG-UPj">
                                         <rect key="frame" x="0.0" y="0.0" width="191" height="72.333333333333329"/>
@@ -840,7 +842,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfp-C7-M2m">
-                                                <rect key="frame" x="0.0" y="48.333333333333314" width="191" height="24"/>
+                                                <rect key="frame" x="0.0" y="48.333333333333343" width="191" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -923,7 +925,7 @@
                                 <variation key="heightClass=compact" spacing="6"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9v-af-dKy">
-                                <rect key="frame" x="95" y="119" width="200" height="30"/>
+                                <rect key="frame" x="95" y="138" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2n5-qZ-7Sc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ox2-EN-VF4"/>
@@ -952,25 +954,34 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gr5-qa-q4X">
-                                <rect key="frame" x="93" y="710" width="204" height="30"/>
+                                <rect key="frame" x="93" y="730" width="204" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1so-X5-yRZ">
                                         <rect key="frame" x="0.0" y="0.0" width="16.333333333333332" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgG-mY-ptx">
                                         <rect key="frame" x="16.333333333333325" y="0.0" width="57.666666666666657" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/Per Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni1-rs-WyY">
                                         <rect key="frame" x="74" y="0.0" width="130" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -994,18 +1005,18 @@
                         <viewLayoutGuide key="safeArea" id="MZo-Am-FBx"/>
                         <color key="backgroundColor" red="0.96561318269999996" green="0.96561318269999996" blue="0.96561318269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bKE-J5-Te6" firstAttribute="centerY" secondItem="cXc-Fs-qk7" secondAttribute="centerY" id="2hj-dZ-XMo"/>
-                            <constraint firstItem="8Je-T3-gTj" firstAttribute="top" secondItem="MZo-Am-FBx" secondAttribute="top" id="5TO-Ig-uoH"/>
+                            <constraint firstItem="bKE-J5-Te6" firstAttribute="centerY" secondItem="cXc-Fs-qk7" secondAttribute="centerY" constant="20" id="2hj-dZ-XMo"/>
+                            <constraint firstItem="8Je-T3-gTj" firstAttribute="top" secondItem="cXc-Fs-qk7" secondAttribute="top" id="5TO-Ig-uoH"/>
                             <constraint firstItem="gr5-qa-q4X" firstAttribute="centerX" secondItem="cXc-Fs-qk7" secondAttribute="centerX" id="8bC-f7-BzX"/>
                             <constraint firstItem="bKE-J5-Te6" firstAttribute="centerX" secondItem="cXc-Fs-qk7" secondAttribute="centerX" id="9SI-YH-Iqr"/>
                             <constraint firstItem="8Je-T3-gTj" firstAttribute="leading" secondItem="MZo-Am-FBx" secondAttribute="leading" id="DOf-Ce-GNv"/>
                             <constraint firstItem="8Je-T3-gTj" firstAttribute="trailing" secondItem="MZo-Am-FBx" secondAttribute="trailing" id="HpI-Ig-cT8"/>
                             <constraint firstItem="8Je-T3-gTj" firstAttribute="bottom" secondItem="cXc-Fs-qk7" secondAttribute="bottom" id="Sgz-aA-hb7"/>
-                            <constraint firstItem="n9v-af-dKy" firstAttribute="top" secondItem="MZo-Am-FBx" secondAttribute="top" constant="75" id="URQ-sd-Apq"/>
+                            <constraint firstItem="n9v-af-dKy" firstAttribute="top" secondItem="MZo-Am-FBx" secondAttribute="top" constant="50" id="URQ-sd-Apq"/>
                             <constraint firstItem="MZo-Am-FBx" firstAttribute="bottom" secondItem="gr5-qa-q4X" secondAttribute="bottom" constant="50" id="VRq-Ms-JEt"/>
                             <constraint firstItem="gr5-qa-q4X" firstAttribute="bottom" secondItem="MZo-Am-FBx" secondAttribute="bottom" id="W3k-Ev-ew6"/>
                             <constraint firstItem="8Je-T3-gTj" firstAttribute="leading" secondItem="cXc-Fs-qk7" secondAttribute="leading" id="X9F-io-res"/>
-                            <constraint firstItem="n9v-af-dKy" firstAttribute="top" secondItem="MZo-Am-FBx" secondAttribute="top" constant="20" id="bO4-mq-VMe"/>
+                            <constraint firstItem="n9v-af-dKy" firstAttribute="top" secondItem="MZo-Am-FBx" secondAttribute="top" id="bO4-mq-VMe"/>
                             <constraint firstItem="bKE-J5-Te6" firstAttribute="centerX" secondItem="cXc-Fs-qk7" secondAttribute="centerX" id="cto-dY-UZp"/>
                             <constraint firstAttribute="trailing" secondItem="8Je-T3-gTj" secondAttribute="trailing" id="ghH-l5-nvh"/>
                             <constraint firstItem="n9v-af-dKy" firstAttribute="centerX" secondItem="cXc-Fs-qk7" secondAttribute="centerX" id="hVm-st-cgd"/>
