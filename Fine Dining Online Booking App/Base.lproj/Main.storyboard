@@ -43,7 +43,7 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4S-WV-3f1">
-                                <rect key="frame" x="73" y="677.66666666666663" width="244.33333333333337" height="56.666666666666629"/>
+                                <rect key="frame" x="73.000000000000014" y="677.66666666666663" width="244.33333333333337" height="56.666666666666629"/>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -113,7 +113,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2M-wQ-ycY">
-                                <rect key="frame" x="73" y="754.33333333333337" width="244.33333333333337" height="56.666666666666629"/>
+                                <rect key="frame" x="73.000000000000014" y="754.33333333333337" width="244.33333333333337" height="56.666666666666629"/>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tET-pU-nVe">
-                                <rect key="frame" x="73" y="601" width="244.33333333333337" height="56.666666666666629"/>
+                                <rect key="frame" x="73.000000000000014" y="601" width="244.33333333333337" height="56.666666666666629"/>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="244.33000000000001" id="2D8-sx-sT2"/>
@@ -1157,44 +1157,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54D-Ns-Ycz">
-                                <rect key="frame" x="95" y="423" width="200" height="35"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ch0-mr-zfr"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GnE-Br-qZI"/>
-                                    <constraint firstAttribute="height" constant="35" id="Vqn-a6-2s9"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="yMF-op-LyK"/>
-                                </constraints>
-                                <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Your Menu">
-                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                </buttonConfiguration>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ch0-mr-zfr"/>
-                                        <exclude reference="GnE-Br-qZI"/>
-                                        <exclude reference="Vqn-a6-2s9"/>
-                                        <exclude reference="yMF-op-LyK"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="yMF-op-LyK"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Ch0-mr-zfr"/>
-                                        <include reference="GnE-Br-qZI"/>
-                                        <include reference="Vqn-a6-2s9"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="showMenu" destination="lhA-IQ-Fvw" eventType="touchUpInside" id="jpk-0X-Qbj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvd-zg-Ghr">
                                 <rect key="frame" x="73" y="685.66666666666663" width="244" height="49.666666666666629"/>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1257,13 +1219,51 @@
                                     <action selector="cancelBooking" destination="lhA-IQ-Fvw" eventType="touchUpInside" id="ESV-jT-gey"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cac-EH-ReU">
+                                <rect key="frame" x="120" y="408" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="IZY-T4-wmU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KTy-uG-yeE"/>
+                                    <constraint firstAttribute="height" constant="40" id="fk0-Tu-wTz"/>
+                                    <constraint firstAttribute="height" constant="45" id="zgW-u4-IGQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Your Menu">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IZY-T4-wmU"/>
+                                        <exclude reference="KTy-uG-yeE"/>
+                                        <exclude reference="fk0-Tu-wTz"/>
+                                        <exclude reference="zgW-u4-IGQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KTy-uG-yeE"/>
+                                        <include reference="fk0-Tu-wTz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="IZY-T4-wmU"/>
+                                        <include reference="zgW-u4-IGQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showMenu" destination="lhA-IQ-Fvw" eventType="touchUpInside" id="YSd-KH-0nf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aGg-Hh-DZB"/>
                         <color key="backgroundColor" red="0.96561318269999996" green="0.96561318269999996" blue="0.96561318269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cac-EH-ReU" firstAttribute="centerX" secondItem="i0Y-YF-XqJ" secondAttribute="centerX" id="093-6P-eVR"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="1gs-RQ-uTl"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="centerX" secondItem="Nvd-zg-Ghr" secondAttribute="centerX" id="4wg-fg-N77"/>
-                            <constraint firstItem="54D-Ns-Ycz" firstAttribute="top" secondItem="i0Y-YF-XqJ" secondAttribute="bottom" constant="40" id="5S7-eM-Pcc"/>
                             <constraint firstItem="UHk-9W-psU" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="5rI-Uz-kkB"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="top" secondItem="Nvd-zg-Ghr" secondAttribute="bottom" constant="25" id="6r8-yh-os0"/>
                             <constraint firstItem="Nvd-zg-Ghr" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="7e1-nd-RZ6"/>
@@ -1271,19 +1271,19 @@
                             <constraint firstItem="i0Y-YF-XqJ" firstAttribute="leading" secondItem="aGg-Hh-DZB" secondAttribute="leading" constant="99" id="CyD-pP-ona"/>
                             <constraint firstItem="Nvd-zg-Ghr" firstAttribute="top" secondItem="UHk-9W-psU" secondAttribute="bottom" constant="83.670000000000002" id="FN5-j3-jdc"/>
                             <constraint firstItem="i0Y-YF-XqJ" firstAttribute="top" secondItem="UHk-9W-psU" secondAttribute="bottom" constant="65" id="G2u-9E-ksm"/>
-                            <constraint firstItem="54D-Ns-Ycz" firstAttribute="centerX" secondItem="i0Y-YF-XqJ" secondAttribute="centerX" id="OVl-mW-MZw"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="bottom" secondItem="aGg-Hh-DZB" secondAttribute="bottom" id="RFE-0v-DYv"/>
                             <constraint firstItem="i0Y-YF-XqJ" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="Tuf-Rz-b37"/>
+                            <constraint firstItem="cac-EH-ReU" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="Zua-nQ-UkL"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="width" secondItem="Nvd-zg-Ghr" secondAttribute="width" id="ehq-Zy-hUz"/>
                             <constraint firstItem="aGg-Hh-DZB" firstAttribute="trailing" secondItem="Nvd-zg-Ghr" secondAttribute="trailing" constant="42" id="eyh-ir-uDE"/>
                             <constraint firstItem="i0Y-YF-XqJ" firstAttribute="top" secondItem="UHk-9W-psU" secondAttribute="bottom" constant="47.670000000000002" id="f4w-Wf-mUM"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="height" secondItem="Nvd-zg-Ghr" secondAttribute="height" id="fC3-eb-jXC"/>
                             <constraint firstItem="UHk-9W-psU" firstAttribute="top" secondItem="aGg-Hh-DZB" secondAttribute="top" constant="25" id="knA-Yn-P2g"/>
                             <constraint firstItem="UHk-9W-psU" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="lHa-gv-S7C"/>
-                            <constraint firstItem="54D-Ns-Ycz" firstAttribute="top" secondItem="i0Y-YF-XqJ" secondAttribute="bottom" constant="29" id="pHx-ub-aCQ"/>
+                            <constraint firstItem="cac-EH-ReU" firstAttribute="top" secondItem="i0Y-YF-XqJ" secondAttribute="bottom" constant="25" id="lOx-jB-cXY"/>
+                            <constraint firstItem="cac-EH-ReU" firstAttribute="top" secondItem="i0Y-YF-XqJ" secondAttribute="bottom" constant="25" id="mDL-BR-bYc"/>
                             <constraint firstItem="GHE-Mf-gjK" firstAttribute="width" secondItem="Nvd-zg-Ghr" secondAttribute="width" id="r8P-TV-kfW"/>
                             <constraint firstItem="UHk-9W-psU" firstAttribute="top" secondItem="aGg-Hh-DZB" secondAttribute="top" id="vro-Vh-2gw"/>
-                            <constraint firstItem="54D-Ns-Ycz" firstAttribute="centerX" secondItem="MLY-dq-tJX" secondAttribute="centerX" id="wMt-BA-9yq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -1296,10 +1296,10 @@
                                 <exclude reference="knA-Yn-P2g"/>
                                 <exclude reference="lHa-gv-S7C"/>
                                 <exclude reference="vro-Vh-2gw"/>
-                                <exclude reference="5S7-eM-Pcc"/>
-                                <exclude reference="OVl-mW-MZw"/>
-                                <exclude reference="pHx-ub-aCQ"/>
-                                <exclude reference="wMt-BA-9yq"/>
+                                <exclude reference="093-6P-eVR"/>
+                                <exclude reference="Zua-nQ-UkL"/>
+                                <exclude reference="lOx-jB-cXY"/>
+                                <exclude reference="mDL-BR-bYc"/>
                                 <exclude reference="7e1-nd-RZ6"/>
                                 <exclude reference="FN5-j3-jdc"/>
                                 <exclude reference="1gs-RQ-uTl"/>
@@ -1319,8 +1319,8 @@
                                 <include reference="f4w-Wf-mUM"/>
                                 <include reference="lHa-gv-S7C"/>
                                 <include reference="vro-Vh-2gw"/>
-                                <include reference="OVl-mW-MZw"/>
-                                <include reference="pHx-ub-aCQ"/>
+                                <include reference="093-6P-eVR"/>
+                                <include reference="mDL-BR-bYc"/>
                                 <include reference="FN5-j3-jdc"/>
                                 <include reference="4wg-fg-N77"/>
                                 <include reference="A7b-Km-yVN"/>
@@ -1334,8 +1334,8 @@
                                 <include reference="Tuf-Rz-b37"/>
                                 <include reference="5rI-Uz-kkB"/>
                                 <include reference="knA-Yn-P2g"/>
-                                <include reference="5S7-eM-Pcc"/>
-                                <include reference="wMt-BA-9yq"/>
+                                <include reference="Zua-nQ-UkL"/>
+                                <include reference="lOx-jB-cXY"/>
                                 <include reference="7e1-nd-RZ6"/>
                                 <include reference="1gs-RQ-uTl"/>
                                 <include reference="6r8-yh-os0"/>
@@ -1356,7 +1356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kru-75-F1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896.9230769230769" y="912.79620853080564"/>
+            <point key="canvasLocation" x="1896.6824644549763" y="912.30769230769226"/>
         </scene>
         <!--Booking DetailVC-->
         <scene sceneID="R0v-6K-cLh">
@@ -1610,7 +1610,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oHl-Mn-4Cb"/>
+        <segue reference="cJR-t5-HhL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Ti logo" width="639" height="611"/>

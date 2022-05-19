@@ -21,7 +21,6 @@
 		860594042826081A004F88F8 /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860594032826081A004F88F8 /* ConfirmationVC.swift */; };
 		86C2DA82282E36B300C38B4C /* TableSizeDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA81282E36B300C38B4C /* TableSizeDateVC.swift */; };
 		86C2DA84282E382500C38B4C /* MenuDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA83282E382500C38B4C /* MenuDateVC.swift */; };
-		86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		860594032826081A004F88F8 /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
 		86C2DA81282E36B300C38B4C /* TableSizeDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSizeDateVC.swift; sourceTree = "<group>"; };
 		86C2DA83282E382500C38B4C /* MenuDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDateVC.swift; sourceTree = "<group>"; };
-		86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				860594032826081A004F88F8 /* ConfirmationVC.swift */,
 				86C2DA81282E36B300C38B4C /* TableSizeDateVC.swift */,
 				86C2DA83282E382500C38B4C /* MenuDateVC.swift */,
-				86C2DA85282E38B000C38B4C /* AppointmentHistoryViewController.swift */,
 			);
 			path = BookingViewController;
 			sourceTree = "<group>";
@@ -188,7 +185,6 @@
 				86C2DA82282E36B300C38B4C /* TableSizeDateVC.swift in Sources */,
 				86C2DA84282E382500C38B4C /* MenuDateVC.swift in Sources */,
 				860594042826081A004F88F8 /* ConfirmationVC.swift in Sources */,
-				86C2DA86282E38B000C38B4C /* AppointmentHistoryViewController.swift in Sources */,
 				860593E928260209004F88F8 /* AppDelegate.swift in Sources */,
 				1BF95E172834981200932A6D /* UserDefaultsFunctions.swift in Sources */,
 				860593EB28260209004F88F8 /* SceneDelegate.swift in Sources */,

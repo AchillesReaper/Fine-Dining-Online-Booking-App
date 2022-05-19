@@ -39,6 +39,9 @@ class ConfirmationVC: UIViewController {
             let defaults = UserDefaults.standard
             defaults.removeObject(forKey: KEY_BOOKING_RECORD)
         }
+        let vc = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        vc.navigationItem.setHidesBackButton(false, animated: false)
     }
     
     @IBAction func backToHome(){

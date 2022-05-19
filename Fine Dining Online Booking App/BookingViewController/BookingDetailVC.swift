@@ -42,7 +42,8 @@ class BookingDetailVC: UIViewController {
             print(readBookingRecord())
             
             let VC = segue.destination as! ConfirmationVC
-            VC.segueMsg = "Booking Successful. Thank you!"
+            VC.segueMsg = "✅ Booking Successful. Thank you!"
+            
         }
     }
     
