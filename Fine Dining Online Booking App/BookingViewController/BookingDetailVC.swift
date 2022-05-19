@@ -12,7 +12,7 @@ import UIKit
 
 class BookingDetailVC: UIViewController {
     @IBOutlet weak var confirmButton: UIButton!
-    
+    @IBOutlet var showTableSizeLabel: UILabel!
     @IBOutlet var customerNameField: UITextField!
     @IBOutlet var customerPhoneField: UITextField!
     @IBOutlet var customerEmailField: UITextField!
@@ -23,6 +23,7 @@ class BookingDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showTableSizeLabel.text = "Table for \(tableSizePicked)"
         // Do any additional setup after loading the view.
         confirmButton.layer.cornerRadius = 10
     }

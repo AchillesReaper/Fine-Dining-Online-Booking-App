@@ -1288,14 +1288,14 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="eyh-ir-uDE"/>
-                                <exclude reference="CyD-pP-ona"/>
-                                <exclude reference="G2u-9E-ksm"/>
-                                <exclude reference="Tuf-Rz-b37"/>
-                                <exclude reference="f4w-Wf-mUM"/>
                                 <exclude reference="5rI-Uz-kkB"/>
                                 <exclude reference="knA-Yn-P2g"/>
                                 <exclude reference="lHa-gv-S7C"/>
                                 <exclude reference="vro-Vh-2gw"/>
+                                <exclude reference="CyD-pP-ona"/>
+                                <exclude reference="G2u-9E-ksm"/>
+                                <exclude reference="Tuf-Rz-b37"/>
+                                <exclude reference="f4w-Wf-mUM"/>
                                 <exclude reference="093-6P-eVR"/>
                                 <exclude reference="Zua-nQ-UkL"/>
                                 <exclude reference="lOx-jB-cXY"/>
@@ -1315,10 +1315,10 @@
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="eyh-ir-uDE"/>
-                                <include reference="CyD-pP-ona"/>
-                                <include reference="f4w-Wf-mUM"/>
                                 <include reference="lHa-gv-S7C"/>
                                 <include reference="vro-Vh-2gw"/>
+                                <include reference="CyD-pP-ona"/>
+                                <include reference="f4w-Wf-mUM"/>
                                 <include reference="093-6P-eVR"/>
                                 <include reference="mDL-BR-bYc"/>
                                 <include reference="FN5-j3-jdc"/>
@@ -1330,10 +1330,10 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="G2u-9E-ksm"/>
-                                <include reference="Tuf-Rz-b37"/>
                                 <include reference="5rI-Uz-kkB"/>
                                 <include reference="knA-Yn-P2g"/>
+                                <include reference="G2u-9E-ksm"/>
+                                <include reference="Tuf-Rz-b37"/>
                                 <include reference="Zua-nQ-UkL"/>
                                 <include reference="lOx-jB-cXY"/>
                                 <include reference="7e1-nd-RZ6"/>
@@ -1401,7 +1401,7 @@
                                     <segue destination="lhA-IQ-Fvw" kind="show" identifier="confirmBooking" id="cJR-t5-HhL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table for #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-fW-Iwx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-fW-Iwx">
                                 <rect key="frame" x="95" y="113" width="200" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ayM-4O-rbe"/>
@@ -1584,6 +1584,7 @@
                         <outlet property="customerEmailField" destination="EJv-um-7Hu" id="lwZ-kK-OdP"/>
                         <outlet property="customerNameField" destination="bpb-iS-XOH" id="ksE-Rr-vVK"/>
                         <outlet property="customerPhoneField" destination="hrA-tH-Rrx" id="jpM-Yg-Lnc"/>
+                        <outlet property="showTableSizeLabel" destination="WOO-fW-Iwx" id="rew-Hs-K8M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFF-0y-P7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
