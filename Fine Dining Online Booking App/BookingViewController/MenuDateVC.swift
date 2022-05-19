@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-class TableAvailabilityViewController: UIViewController {
+class MenuDateVC: UIViewController {
+    @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var daysField: UITextField!
     let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     
@@ -16,6 +17,7 @@ class TableAvailabilityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuButton.layer.cornerRadius = 10
         
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -26,7 +28,7 @@ class TableAvailabilityViewController: UIViewController {
     //Pass Data to Menu
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goMenu" {
-            let VC = segue.destination as! MenuViewController
+            let VC = segue.destination as! MenuVC   
             VC.day = daysField.text!
         }
         
@@ -35,7 +37,7 @@ class TableAvailabilityViewController: UIViewController {
 }
 
 //Set up PickerView.
-extension TableAvailabilityViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+extension MenuDateVC: UIPickerViewDelegate, UIPickerViewDataSource{
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

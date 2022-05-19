@@ -10,12 +10,14 @@ import UIKit
 
 class ConfirmationVC: UIViewController {
 
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet var msgLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var sizeLabel: UILabel!
     @IBAction func showMenu(){
-        let vc = storyboard?.instantiateViewController(identifier: "MenuViewController") as! MenuViewController
+        let vc = storyboard?.instantiateViewController(identifier: "MenuVC") as! MenuVC
         vc.day = weekday
         self.navigationController?.pushViewController(vc, animated: true)
         vc.navigationItem.setHidesBackButton(false, animated: false)
@@ -51,6 +53,10 @@ class ConfirmationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        homeButton.layer.cornerRadius = 10
+        cancelButton.layer.cornerRadius = 10
+        
         msgLabel.text = segueMsg
         if (readBookingRecord().count > 0 ){
             yourBooking = readBookingRecord()[0]

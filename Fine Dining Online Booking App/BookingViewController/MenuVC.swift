@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MenuViewController: UIViewController{
+class MenuVC: UIViewController{
     @IBOutlet weak var appetizerTab: UILabel!
     @IBOutlet weak var sashimiTab: UILabel!
     @IBOutlet weak var mainTab: UILabel!
