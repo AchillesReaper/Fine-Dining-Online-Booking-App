@@ -128,19 +128,17 @@ func readBookingRecord() -> [BookingDetail]{
     }
 }
 
-//func updateBookingRecord(updatedRecords: [BookingDetail]){
-//    //update the UserDefaults when a booking is confirmed
-//    let defaults = UserDefaults.standard
-//    defaults.set(try? PropertyListEncoder().encode(updatedRecords), forKey: KEY_BOOKING_RECORD)
-//}
+
 
 
 func confirmBooking(newBooking: [BookingDetail]){
-//    var bookings = readBookingRecord()
-//    let dateFomatter = DateFormatter()
-//    dateFomatter.dateFormat = "YYYY-MM-dd, E"
-//    bookings.append(newBooking)
-//    updateBookingRecord(updatedRecords: bookings)
+//    update the UserDefaults when a booking is confirmed
+//    below version of KEY_BOOKING_RECORD only store 1 booking record, so that the client side of this app is show
+//    this prototye assumes one customer can only make one booking
     let defaults = UserDefaults.standard
     defaults.set(try? PropertyListEncoder().encode(newBooking), forKey: KEY_BOOKING_RECORD)
+    
+//    below is the version to accumulate the booking record. In reality, this version of structre should be used so that the restaurant can retrive all the bookings
+//    let updatedRecords = readBookingRecord() + newBooking
+//    defaults.set(try? PropertyListEncoder().encode(updatedRecords), forKey: KEY_BOOKING_RECORD)
 }

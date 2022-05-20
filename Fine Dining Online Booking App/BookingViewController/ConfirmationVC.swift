@@ -63,6 +63,8 @@ class ConfirmationVC: UIViewController {
         msgLabel.text = segueMsg
         if (readBookingRecord().count > 0 ){
             yourBooking = readBookingRecord()[0]
+//            in reality or multi-bookings are stored, the above line should be rewritten as below,
+//            yourBooking = readBookingRecord().last
             nameLabel.text = yourBooking!.customerName
             dateLabel.text = yourBooking!.bookingDate
             sizeLabel.text = yourBooking!.tableSize
