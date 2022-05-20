@@ -107,7 +107,6 @@ func updateTableInStockATConfirmation(datePicked: String, tableSizePicked: Strin
         if itemDate == datePicked {
             inventory[index].tablez[tableSizePicked]! -= 1
         }
-        print(inventory[index])
     }
     updateTableInStock(updatedRecords: inventory)
 }

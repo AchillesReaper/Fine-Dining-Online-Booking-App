@@ -67,7 +67,6 @@ class TableSizeDateVC: UIViewController {
                     pickableDate.append(item.diningDate)
                 }
             }
-            print(pickableDate)
             diningDateField.inputView = datePickerView
         }
         tableAvailibilityView.delegate = self
@@ -84,9 +83,7 @@ class TableSizeDateVC: UIViewController {
             let VC = segue.destination as! BookingDetailVC
             if tableSize != "0" && diningDateField.text != nil{
                 VC.tableSizePicked = tableSize
-                print(tableSize)
                 VC.datePicked = diningDateField.text!
-                print(diningDateField.text!)
             }
         }
     }

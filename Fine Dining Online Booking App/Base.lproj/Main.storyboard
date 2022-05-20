@@ -1411,10 +1411,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="j4j-zV-E7y">
-                                <rect key="frame" x="45" y="228.66666666666663" width="300" height="387"/>
+                                <rect key="frame" x="45" y="191" width="300" height="462"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qej-xe-zbv">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="62.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="87.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-Hk-DOt">
                                                 <rect key="frame" x="127" y="0.0" width="46" height="20.333333333333332"/>
@@ -1446,11 +1446,20 @@
                                                         <include reference="fOY-RN-j3K"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="nameChanged:" destination="WLY-kt-J0e" eventType="editingChanged" id="NzX-m5-PU2"/>
+                                                </connections>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xT-Sw-Mho">
+                                                <rect key="frame" x="132.33333333333334" y="70.333333333333314" width="35.333333333333343" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-yn-AhR">
-                                        <rect key="frame" x="0.0" y="162.33333333333334" width="300" height="62.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="187.33333333333331" width="300" height="87.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwU-Wk-Vli">
                                                 <rect key="frame" x="91.666666666666657" y="0.0" width="116.66666666666666" height="20.333333333333332"/>
@@ -1459,7 +1468,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrA-tH-Rrx">
-                                                <rect key="frame" x="0.0" y="28.333333333333314" width="300" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.333333333333371" width="300" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="Wyd-Ns-nK4"/>
                                                     <constraint firstAttribute="width" constant="300" id="yNZ-CX-2wd"/>
@@ -1482,11 +1491,20 @@
                                                         <include reference="yNZ-CX-2wd"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="phoneChanged:" destination="WLY-kt-J0e" eventType="editingChanged" id="qg3-1P-0XV"/>
+                                                </connections>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWX-9g-NR3">
+                                                <rect key="frame" x="132.33333333333334" y="70.333333333333371" width="35.333333333333343" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tpu-RY-C57">
-                                        <rect key="frame" x="0.0" y="324.66666666666674" width="300" height="62.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="374.66666666666663" width="300" height="87.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64W-y3-bjY">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="20.333333333333332"/>
@@ -1495,7 +1513,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-um-7Hu">
-                                                <rect key="frame" x="0.0" y="28.333333333333258" width="300" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.333333333333371" width="300" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="lYf-Ip-JwD"/>
                                                     <constraint firstAttribute="width" constant="200" id="rYT-AR-Qt9"/>
@@ -1518,7 +1536,16 @@
                                                         <include reference="lYf-Ip-JwD"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="emailChanged:" destination="WLY-kt-J0e" eventType="editingChanged" id="owp-0s-tua"/>
+                                                </connections>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-Ya-q4c">
+                                                <rect key="frame" x="0.0" y="70.333333333333371" width="300" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -1581,8 +1608,11 @@
                     <navigationItem key="navigationItem" id="j8H-t5-XeL"/>
                     <connections>
                         <outlet property="confirmButton" destination="Mk1-cf-Jop" id="0Dt-eX-2Qw"/>
+                        <outlet property="customerEmailErrorLabel" destination="5j7-Ya-q4c" id="N35-2W-jtQ"/>
                         <outlet property="customerEmailField" destination="EJv-um-7Hu" id="lwZ-kK-OdP"/>
+                        <outlet property="customerNameErrorLabel" destination="0xT-Sw-Mho" id="b5p-il-1sN"/>
                         <outlet property="customerNameField" destination="bpb-iS-XOH" id="ksE-Rr-vVK"/>
+                        <outlet property="customerPhoneErrorLabel" destination="tWX-9g-NR3" id="5V9-GD-tVI"/>
                         <outlet property="customerPhoneField" destination="hrA-tH-Rrx" id="jpM-Yg-Lnc"/>
                         <outlet property="showTableSizeLabel" destination="WOO-fW-Iwx" id="rew-Hs-K8M"/>
                     </connections>
