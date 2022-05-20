@@ -66,10 +66,12 @@ class BookingDetailVC: UIViewController {
         }
     }
     
+    
+//    below functions are to validate customer's personal information
     @IBAction func phoneChanged(_ sender: Any){
         if let customerPhone = customerPhoneField.text {
             if customerPhone.count != 10 {
-            customerPhoneErrorLabel.text  = "Invalad Phone Number. Your phone number should have 10 digits"
+            customerPhoneErrorLabel.text  = "Invalad Phone Number."
             customerPhoneErrorLabel.isHidden = false
             }else{
                 customerPhoneErrorLabel.isHidden = true

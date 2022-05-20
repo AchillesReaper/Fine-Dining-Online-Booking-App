@@ -49,7 +49,7 @@ func readTableInStock() -> [TableInStock]{
 
 
 func updateTableInStock(updatedRecords: [TableInStock]){
-    //update the UserDefaults when a booking is confirmed
+    //update the TableInStock when a booking is confirmed
     let defaults = UserDefaults.standard
     defaults.set(try? PropertyListEncoder().encode(updatedRecords), forKey: KEY_Table_STATUS)
     

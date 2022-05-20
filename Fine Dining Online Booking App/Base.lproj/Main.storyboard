@@ -1349,6 +1349,7 @@
                         <outlet property="cancelButton" destination="GHE-Mf-gjK" id="HBc-gx-p7N"/>
                         <outlet property="dateLabel" destination="Jie-ev-ilN" id="gCs-Z3-UI1"/>
                         <outlet property="homeButton" destination="Nvd-zg-Ghr" id="h3S-wP-ysa"/>
+                        <outlet property="menuButton" destination="cac-EH-ReU" id="YI6-hV-5tz"/>
                         <outlet property="msgLabel" destination="UHk-9W-psU" id="8xf-IN-P4T"/>
                         <outlet property="nameLabel" destination="76L-R1-OTh" id="u91-uu-Tfa"/>
                         <outlet property="sizeLabel" destination="V2d-Lf-wfA" id="br6-lZ-TXp"/>

@@ -12,6 +12,7 @@ class ConfirmationVC: UIViewController {
 
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var menuButton: UIButton!
     @IBOutlet var msgLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
@@ -78,6 +79,10 @@ class ConfirmationVC: UIViewController {
             dateFormatter.dateFormat = "EEEE"
             let weekday = dateFormatter.string(from: date!)
             print("Weekday: \(weekday)")
+        }else{
+            cancelButton.isHidden = true
+            menuButton.isHidden = true
+            msgLabel.text = "You have no booking."
         }
     }
 
